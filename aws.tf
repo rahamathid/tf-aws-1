@@ -7,7 +7,7 @@ provider "aws" {
 resource "aws_instance" "tfvm" {
   ami = "ami-04336e67b2d52699e"
   instance_type = "t2.micro"
-  tag {
+  tags {
     name = "tfvm"
   }
 }
@@ -15,7 +15,7 @@ resource "aws_instance" "tfvm" {
 resource "aws_instance" "tfvm2" {
   ami = "ami-04336e67b2d52699e"
   instance_type = "t2.micro"
-  tag {
+  tags {
     name = "tfvm2"
 
   }
